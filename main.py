@@ -43,7 +43,6 @@ if image_file is not None:
 if st.button('Run Prediction'):
     lbl, rcomm = predict(opencv_image)
     if lbl != int(image_file.name[0]):
-
         st.write(
             'Wrong prediction! as the model is 87% accurate. we are working on improvement.')
 
