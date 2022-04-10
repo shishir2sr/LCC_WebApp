@@ -29,10 +29,15 @@ if image_file is not None:
     opencv_image = cv2.imdecode(file_bytes, 1)
 
     # Now do something with the image! For example, let's display it:
-    st.image(opencv_image, channels="BGR", width=120)
+    st.image(opencv_image, channels="BGR", width=180)
+    file_details = {"filename": image_file.name,
+                    "filetype": image_file.type, "filesize": image_file.size}
+    st.write(file_details)
 
 
 if st.button('Predict'):
+    st.subheader('Result')
     st.subheader(predict(opencv_image))
 else:
-    st.write('Goodbye')
+    st.subheader('Result')
+st.image('Dtree.png')
