@@ -1,5 +1,5 @@
 import pickle
-from tkinter import Label
+
 import numpy as np
 from image_rgb import imgAvgRgb
 import sklearn
