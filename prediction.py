@@ -22,7 +22,6 @@ def predict(img):
         prediction = '7.5kg/ 0.133 hectares of land'
         return label, prediction
     elif ppredict[0] == 4.0:
-
         label = int(ppredict[0])
         prediction = 'N Supply Improvement Needed'
         return label, prediction
